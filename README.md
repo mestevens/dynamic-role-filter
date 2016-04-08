@@ -8,7 +8,7 @@ A DynamicFeature and filter to allow the @RolesAllowed annotation to accept subs
 <dependency>
     <groupId>ca.mestevens.java</groupId>
     <artifactId>dynamic-role-filter</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 </dependency>
 ```
 
@@ -29,7 +29,7 @@ and you're all set to go!
 This lets you use replacement in your `@RolesAllowed` annotations. For example I have the following resource endpoint:
 ```
 @GET
-@Path("/users/{userId})
+@Path("/users/{userId}")
 public Response getUser() {
     return Response.ok().build();
 }
@@ -37,7 +37,7 @@ public Response getUser() {
 which I want to return a 200 if you're the appropriate user accessing it. With the old `RolesAllowedDynamicFeature` you would have to do the following:
 ```
 @GET
-@Path("/users/{userId})
+@Path("/users/{userId}")
 @RolesAllowed("users:read")
 public Response getUser(@Auth final User user,
                         @PathParam("userId") final String userId) {
@@ -50,8 +50,8 @@ public Response getUser(@Auth final User user,
 However, with the `DynamicRolesAllowedDynamicFeature` all you would need to do is:
 ```
 @GET
-@Path("/users/{userId})
-@RolesAllowed("users:{userId}:read)
+@Path("/users/{userId}")
+@RolesAllowed("users:{userId}:read")
 public Response getUser() {
     return Response.ok().build();
 }
