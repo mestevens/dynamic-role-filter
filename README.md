@@ -8,7 +8,7 @@ A DynamicFeature and filter to allow the @RolesAllowed annotation to accept subs
 <dependency>
     <groupId>ca.mestevens.java</groupId>
     <artifactId>dynamic-role-filter</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 </dependency>
 ```
 
