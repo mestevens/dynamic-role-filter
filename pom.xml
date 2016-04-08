@@ -4,7 +4,7 @@
 
     <groupId>ca.mestevens.java</groupId>
     <artifactId>dynamic-role-filter</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>Dynamic Role Filter</name>
     <description>A filter and DynamicFeature to allow for replacements in the RolesAllowed annotation</description>
     <url>https://github.com/mestevens/dynamic-role-filter.git</url>
