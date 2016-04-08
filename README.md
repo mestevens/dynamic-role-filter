@@ -56,4 +56,4 @@ public Response getUser() {
     return Response.ok().build();
 }
 ```
-Of course, you'll have to update the permissions you assing to a user appropriately. In the first example every user (who you want to have access to that endpoint) would need the broad permission of `user:read`. In the second example, each user would need more specific permissions `user:<userId>:read` where `<userId>` is the userId of the new user.
+Of course, you'll have to update the permissions you assign to a user appropriately. In the first example every user (who you want to have access to that endpoint) would need the broad permission of `user:read`. In the second example, each user would need more specific permissions `user:<userId>:read` where `<userId>` is the userId of the new user.
